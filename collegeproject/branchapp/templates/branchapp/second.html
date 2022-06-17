@@ -1,0 +1,11 @@
+<h2>STUDENT LIST</h2>
+<form  method="post">
+     {% csrf_token %}
+     Name of the student: <input type="text" name="student"><br>
+     Department: <input type="text" name="department"><br>
+     Nationality: <input type="text" name="nationality"><br>
+     Phone_No: <input type="text" name="phone_no"><br>
+    <input type="submit" value="REGISTRATIONS"><br>
+</form>
+
+<br> <a href="{% url 'branchapp:new'%}">back</a>

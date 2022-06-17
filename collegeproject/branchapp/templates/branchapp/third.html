@@ -1,0 +1,12 @@
+<h2> STUDENT DETAILS</h2>
+
+<body>
+{% if data %}
+
+Name of the student :{{data.student}}<br>
+Department :{{data.department}}<br>
+Nationality: {{data.nationality}}<br>
+Phone No : {{data.phone_no}}<br>
+
+{% endif %}
+<br> <a href="{% url 'branchapp:new'%}">back</a>
